@@ -1,0 +1,810 @@
+/**
+ * file: css/index.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalet: Plakaten */
+       --white: #ffffff;
+       --baggrund: #efefef;
+       --moerkbrun:#322e26;
+       --Moerkpink: #ec185b;
+       --blaa: #3ec2d0;
+       --lyserød: #ff81e6;
+       --lilla: #7e0cec;
+       --moerkeblå:#0A4E66; 
+       --lysebrund:#635f56;
+     }
+    
+    /* Skrifttyper, størrelse, udseende og placering */
+    h2 {
+        color:#322e26;
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-size: 1.3rem;
+        font-style: italic;
+      }
+    
+    h3 {
+      color:#efefef;
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+    }
+
+    h4 {
+        color:var(--moerkbrun);
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 0.6rem;
+        font-style: italic;
+        text-align: center;
+      }
+
+      h5 {
+        color:#efefef;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+      }
+
+    p{
+      color: #ec185b;
+      font-family: "Poppins", serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-style: italic;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+     /*B baggrund */
+    body {
+      background-color: var(--baggrund);
+    }
+
+/* Flex af logo og menupunkter i header */
+.main-header {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo{
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 46rem;
+  }
+  
+  /* Flex og placering af menupunkter */
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* mellemrum mellem nav tasterne*/
+    margin-left: 11rem;
+    margin-top: -5.5rem;
+  }
+  
+  /* Styling af menupunkter */
+  .main-nav ul li a {
+    text-decoration: none;
+    color: var(--moerkbrun);
+    font-family: "Poppins", serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .main-nav ul li a:hover {
+    color:#ec185b;
+  }
+
+  .illustration1{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 30rem;
+  }
+
+  .illustration1 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .cirkel1 {
+    position:absolute;
+    width: 20rem;
+    border-style: solid;
+    border-color: var(--blaa);
+    border-radius: 10rem;
+    margin-top: 4rem;
+    animation:spin 35s linear infinite;
+  }
+  @keyframes spin{
+    from{
+      transform:rotate(360deg);
+    }
+    to{
+      transform:rotate(0deg);
+    }
+  }
+  
+  .pinkcirkel1{
+    position:absolute;
+    width: 10rem;
+    margin-top: 9rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+
+  .pinkcirkel2{
+    position:absolute;
+    width: 12rem;
+    margin-top: 8rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel3{
+    position:absolute;
+    width: 14rem;
+    margin-top: 7rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel4{
+    position:absolute;
+    width: 16rem;
+    margin-top: 6rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel5{
+    position:absolute;
+    width: 18rem;
+    margin-top: 5rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel6{
+    position:absolute;
+    width: 20rem;
+    margin-top: 4rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel7{
+    position:absolute;
+    width: 22rem;
+    margin-top: 3rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel8{
+    position:absolute;
+    width: 24rem;
+    margin-top: 2rem;
+    background-color: #3ec2d0;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+
+  .pinkcirkel9{
+    position:absolute;
+    width: 26rem;
+    margin-top: 1rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+
+  .pinkcirkel10{
+    position:absolute;
+    width: 28rem;
+    margin-top: 0rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+
+  .pinkcirkel11{
+    position:absolute;
+    width: 30rem;
+    margin-top: -1rem;
+    border-color: var(--blaa);
+    border-radius: 15rem; 
+  }
+
+
+  .illustration2{
+    position: relative;
+    display: flex;
+     justify-content:center;
+     margin-bottom: 30rem;
+     margin-top: -5rem;
+     margin-left: 35rem;
+    }
+
+    .illustration2 img:hover{
+        border-style: solid;
+        border-width: 0.5rem;
+        transition: .3s;
+      }
+
+    .overskrift1{
+        position:absolute;
+        width: 24rem;
+        margin-top: 15rem;
+        border-color: transparent;
+    }
+
+    .textvision{
+        position:absolute;
+        text-align: center;
+        width: 22rem;
+        margin-top: 22rem;
+        font-size:0.8rem;
+    }
+
+    .overskrift2{
+        position:absolute;
+        width: 24rem;
+        margin-top: 15rem;
+        border-color: transparent;
+    }
+
+    .overskrift3{
+        position:absolute;
+        width: 32rem;
+        margin-top: 9rem;
+        border-color: transparent;
+    }
+
+
+    .illustration3{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    margin-top: -5rem;
+    margin-bottom: 30rem;
+    margin-right: 35rem;
+    }
+ 
+    .illustration3 img:hover{
+        border-style: solid;
+        border-width: 0.5rem;
+        transition: .3s;
+      }
+
+      .texthistorie{
+        position:absolute;
+        text-align: center;
+        width: 21rem;
+        margin-top: 22rem;
+        font-size:0.7rem;
+    }
+    
+.lillacirkel8{
+    position:absolute;
+    width: 28rem;
+    margin-top: 13.5rem;
+    background-color: var(--moerkbrun);
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+  
+  .lillacirkel9{
+    position:absolute;
+    width: 30rem;
+    margin-top: 12.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+  
+  .lillacirkel10{
+    position:absolute;
+    width: 32rem;
+    margin-top: 11.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+
+  .lillacirkel11{
+    position:absolute;
+    width: 34rem;
+    margin-top: 10.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+
+  .lillacirkel12{
+    position:absolute;
+    width: 36rem;
+    margin-top: 9.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+
+  .lillacirkel13{
+    position:absolute;
+    width: 38rem;
+    margin-top: 8.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+
+  .lillacirkel14{
+    position:absolute;
+    width: 40rem;
+    margin-top: 7.5rem;
+    background-color:var(--moerkbrun);
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 20rem; 
+  }
+  
+  .lillacirkel15{
+    position:absolute;
+    width: 42rem;
+    margin-top: 6.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 30rem; 
+  }
+
+  .lillacirkel16{
+    position:absolute;
+    width: 44rem;
+    margin-top: 5.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 30rem; 
+  }
+
+  .lillacirkel17{
+    position:absolute;
+    width: 46rem;
+    margin-top: 4.5rem;
+    border-style: solid;
+    border-color:var(--blaa);
+    border-radius: 30rem; 
+  }
+
+
+  .illustration4{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  margin-left: 35rem;
+  }
+
+  .frivillige{
+    position:absolute;
+    width: 32rem;
+    margin-top: -4rem;
+    border-color: transparent;
+  }
+
+  .textfrivillige{
+    position:absolute;
+    text-align: center;
+    width: 18rem;
+    margin-top:6.5rem;
+    font-size:0.83rem;
+}
+
+  .illustration4 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .illustration5{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-top: 19rem;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+  }
+
+  .illustration5 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .cirkel5 {
+    position:absolute;
+    width: 18rem;
+    border-style: solid;
+    border-color: var(--blaa);
+    border-radius: 10rem;
+    margin-top: 5rem;
+  }
+
+  .illustration6{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-top: 9rem;
+  margin-left: 38rem;
+  margin-bottom: 4rem;
+  }
+
+  .illustration6 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .cirkel6 {
+    position:absolute;
+    width: 16rem;
+    border-style: solid;
+    border-color: var(--blaa);
+    border-radius: 10rem;
+    margin-top: 6rem;
+  }
+
+  .illustration7{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-right: 45rem;
+  margin-top: -15rem;
+  margin-bottom: 4rem;
+  }
+
+  .illustration7 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .texthoert{
+    position:absolute;
+    width: 16rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    border-color: transparent;
+  }
+
+  .cirkel2 {
+    position:absolute;
+    width: 8rem;
+    border-style: solid;
+    border-color: var(--blaa);
+    border-radius: 10rem;
+    margin-top: 10rem;
+    animation:spin 15s infinite;
+  }
+  .cirkel3 {
+    position:absolute;
+    width: 8rem;
+    border-style: solid;
+    border-color: var(--blaa);
+    border-radius: 10rem;
+    margin-top: 10rem;
+    animation:spin 15s reverse infinite;
+  }
+
+  .illustration8{
+    position: relative;
+   display: flex;
+  justify-content:center;
+  margin-right: 35rem;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+  }
+
+  .illustration8 img:hover{
+    border-style: solid;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+  .illustration9{
+    position: relative;
+    display: flex;
+     justify-content:center;
+     margin-bottom: 30rem;
+     margin-top: 15rem;
+    }
+
+    .illustration9 img:hover{
+        border-style: solid;
+        border-width: 0.5rem;
+        transition: .3s;
+      }
+
+.tilmelding{
+    position: relative;
+    display: flex;
+   justify-content:center;
+   flex-direction: column;
+   gap: 1rem;
+   margin-right:5rem;
+   margin-top: 16.5rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 3px solid var(--blaa);
+  background-color:var(--blaa);
+  border-radius: 20rem;
+  color:var(--baggrund);
+  margin-left: 3rem;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+textarea{
+    width: 135%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid var(--blaa);
+    background-color:var(--blaa);
+    color: var(--baggrund);
+    border-radius: 1rem;
+    margin-right: -10rem;
+    font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  }
+
+  input[type=submit]{
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid var(--blaa);
+    background-color:var(--blaa);
+    color: var(--baggrund);
+    border-radius: 1rem;
+    font-family: "Poppins", serif;
+    margin-left: 6rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  }
+
+  ::placeholder {
+    color:var(--baggrund);
+    opacity: 1;
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--baggrund);
+  }
+
+
+/* Flex og placering af footer */
+.footer {
+    display: flex;
+    align-items: start; /* Justerer elementerne til at starte foroven */
+    font-family: "Poppins", sans-serif;
+    background-color: var(--moerkbrun);
+    color: var(--white);
+  }
+  
+  /* Flex styling til hver footer-sektion */
+  .footer-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column; /* Laver en lodret stak af h2 og p */
+    align-items: start; /* Justerer elementerne til venstre */
+    padding: 4rem;
+  }
+  
+  .footer-section h3 {
+    margin: 0;
+    font-size:1rem;
+  }
+  
+  .footer-section p{
+    font-size: 0.7rem;
+  }
+  
+  .ikoner{
+    margin-top: 0.2rem;
+    width: 6rem;
+  }
+
+/* Media for mobiltelefoner */
+@media only screen and (min-width: 440px) and (max-width: 767px) {
+
+    /* Skrifttyper, størrelse, udseende og placering, ændres da skalaen er mindre på telefon */
+    
+    .logo{
+      display: flex;
+      justify-content: center;
+      margin-right: 2rem;
+      margin-top: 3rem;
+      }
+      
+      /* Logo */
+      .logo img {
+        width: 28rem;
+      }
+    
+      .main-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem; /* mellemrum mellem nav tasterne*/
+        margin-top: -3rem;
+        margin-right: 1.8rem;
+        margin-left: 8rem;
+      }
+    
+      .main-nav ul li a {
+        text-decoration: none;
+        color: var(--moerkbrun);
+        font-family: "Poppins", serif;
+        font-size: 0.9rem;
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .illustration1{
+      margin-top: 0rem;
+      margin-bottom: 14rem;
+      margin-right: 8rem;
+      z-index: 2;
+      }
+
+      .cirkel1 {
+        width: 22rem;
+        border-radius: 30rem;
+      }
+
+      .illustration2{
+        margin-bottom: 0rem;
+        margin-top: 11rem;
+        margin-left: -6rem;
+        padding-left: 15rem;
+        width: 38rem;
+        height: 48rem;
+        overflow: hidden;
+        z-index: 1;
+        }
+
+        .illustration3{
+            margin-bottom: 3rem;
+            margin-top:-14rem;
+            margin-right: 10rem;
+            padding-right: 8rem;
+            width: 30rem;
+            height: 48rem;
+            overflow: hidden;
+            }
+
+        .illustration4{
+            margin-bottom: 34rem;
+            margin-top: -10rem;
+            margin: 0rem;
+            }
+        
+        .illustration5{
+            margin-top:26rem;
+            margin-right: 9rem;
+            z-index: 3;
+             }
+        
+        .cirkel5{
+            width: 16rem;
+        }
+            
+        .illustration6{
+            margin-top:-10rem;
+            margin-left: 13rem;
+          
+            }
+
+        .cirkel6{
+            width: 12rem;
+            margin-top: 6.2rem;
+        }
+
+        .pinkcirkel5{
+            width: 14rem;
+        }
+
+        .illustration7{
+            margin-top:23rem;
+            margin-left: 11rem;
+            }
+
+        .illustration8{
+             margin-top:-12rem;
+             margin-left: 22rem;
+            }
+        
+        .tilmelding{
+            margin-top: 9rem;
+        }
+        
+        .illustration9{
+            margin-top: 25rem;
+            margin-bottom: -25rem;
+            padding-left: 0rem;
+            width: 32rem;
+            height: 52rem;
+            overflow: hidden;
+        }
+
+  
+     
+  
+    
+
+    .pinkcirkel6{
+     display: none;
+    }
+
+      
+      .pinkcirkel7{
+       display: none;
+      }
+  
+      
+    .footer{
+      flex-direction: column;
+      margin-top: 30rem;
+  }
+  
+  
+  /* Flex styling til hver footer-sektion */
+  .footer-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column; /* Laver en lodret stak af h2 og p */
+    align-items: start; /* Justerer elementerne til venstre */
+    padding: 4rem;
+  }
+  
+  .footer-section h3 {
+    margin: 0;
+    font-size:1.5rem;
+  }
+  
+  .footer-section p{
+    font-size: 1rem;
+  }
+  
+  .ikoner{
+    margin-top: 1rem;
+    width: 14rem;
+  }
+    }

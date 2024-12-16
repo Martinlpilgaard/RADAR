@@ -1,0 +1,758 @@
+/**
+ * file: css/index.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalet: Plakaten */
+       --white: #ffffff;
+       --baggrund: #efefef;
+       --moerkbrun:#322e26;
+       --Moerkpink: #ec185b;
+       --blaa: #3ec2d0;
+       --lyserød: #ff81e6;
+       --lilla: #7e0cec;
+       --moerkeblå:#0A4E66; 
+       --lysebrund:#635f56;
+     }
+    
+    /* Skrifttyper, størrelse, udseende og placering */
+    h3 {
+      color:#efefef;
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+    }
+    p{
+      color: #ec185b;
+      font-family: "Poppins", serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-style: 
+      italic;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+     /*B baggrund */
+    body {
+      background-color: var(--baggrund);
+    }
+    
+    /* Flex af logo og menupunkter i header */
+    .main-header {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    @keyframes spin{
+      from{
+        transform:rotate(360deg);
+      }
+      to{
+        transform:rotate(0deg);
+      }
+    }
+    
+    .logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+    }
+    
+    /* Logo */
+    .logo img {
+      width: 46rem;
+    }
+    
+    /* Flex og placering af menupunkter */
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem; /* mellemrum mellem nav tasterne*/
+      margin-left: 11rem;
+      margin-top: -5.5rem;
+    }
+    
+    /* Styling af menupunkter */
+    .main-nav ul li a {
+      text-decoration: none;
+      color: var(--moerkbrun);
+      font-family: "Poppins", serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+    
+    .main-nav ul li a:hover {
+      color:#ec185b;
+    }
+
+    .overskrift{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-left: 45rem;
+      margin-bottom: -10rem;
+      margin-top: -10rem;
+    }
+
+    .portraitlogo{
+      width: 30rem;
+      animation:spin 35s linear infinite;
+    }
+
+    .portraitlogo img:hover{
+    transform: scale(1.1);
+    }
+
+    .infographic1{
+      position: relative;
+      display: flex;
+       margin-right: 20rem;
+       margin-top: 10rem;
+    }
+
+    .infographic1 img:hover{
+        border-style: solid;
+        border-radius: 150rem;
+        border-width: 0.2rem;
+      }
+
+    .cirkel1 {
+        position:absolute;
+        width: 31rem;
+        margin-top: 8.2rem;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30rem;
+        margin-left: 1rem;
+      }
+
+    .cirkel1:hover{
+      animation:scale1 5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes scale1 {
+      0%{left: 0rem;;}
+      100%{left: 3rem;scale: 1.3}
+    }
+
+  .pinkcirkel3{
+    position:absolute;
+    width: 34rem;
+    margin-top: 7rem;
+    border-color: var(--lyserød);
+    border-width: 3rem;
+    border-radius: 15rem; 
+  }
+  .pinkcirkel4{
+    position:absolute;
+    width: 36rem;
+    margin-top: 6rem;
+    border-color: var(--lyserød);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel5{
+    position:absolute;
+    width: 38rem;
+    margin-top: 5rem;
+    border-color: var(--lyserød);
+    border-radius: 15rem; 
+  }
+  .pinkcirkel6{
+    position:absolute;
+    width: 40rem;
+    margin-top: 4rem;
+    border-color: var(--lyserød);
+    border-radius: 100rem; 
+  }
+  .pinkcirkel7{
+    position:absolute;
+    width: 42rem;
+    margin-top: 3rem;
+    border-color: var(--lyserød);
+    border-radius: 25rem; 
+  }
+  .pinkcirkel8{
+    position:absolute;
+    width: 44rem;
+    margin-top: 2rem;
+    border-style: solid;
+    border-color:var(--lyserød);
+    border-radius: 25rem; 
+  }
+  .pinkcirkel9{
+    position:absolute;
+    width: 46rem;
+    margin-top: 1rem;
+    border-style: solid;
+    border-color: var(--lyserød);
+    border-radius: 25rem; 
+  }
+  
+  .pinkcirkel10{
+    position:absolute;
+    width: 48rem;
+    border-style: solid;
+    border-color:var(--lyserød);
+    border-radius: 150rem; 
+  }
+  
+  .pinkcirkel11{
+    position:absolute;
+    width: 50rem;
+    margin-top: -1rem;
+    border-style: solid;
+    border-color:var(--lyserød);
+    border-radius: 150rem; 
+  }
+  .pinkcirkel12{
+    position:absolute;
+    width: 52rem;
+    margin-top:-2rem;
+    border-style: solid;
+    border-color: var(--lyserød);
+    border-radius: 150rem; 
+  }
+  .pinkcirkel13{
+    position:absolute;
+    width: 54rem;
+    margin-top:-3rem;
+    border-style: solid;
+    border-color:var(--lyserød);
+    border-radius: 150rem; 
+  }
+
+  
+  .infographic2{
+    position: relative;
+    display: flex;
+    justify-content: end;
+     margin-top:40rem;
+  }
+
+  .infographic2 img:hover{
+      border-style: solid;
+      border-radius: 150rem;
+      border-width: 0.4rem;
+      transition: .1s;
+    }
+
+    @keyframes scale {
+      0%{right: 0rem;;}
+      100%{right: 3rem;scale: 1.3}
+    }
+    
+  .cirkel2 {
+      position:absolute;
+      width: 31rem;
+      margin-top: 8rem;
+      border-style: solid;
+      border-color: transparent;
+      border-radius: 30rem;
+      margin-right: 1rem;
+    }
+  
+  .cirkel2:hover{
+    animation:scale 5s;
+    animation-fill-mode: forwards;
+  }
+
+.roedcirkel3{
+  position:absolute;
+  width: 34rem;
+  margin-top: 7rem;
+  border-color: var(--Moerkpink);
+  border-width: 3rem;
+  border-radius: 15rem; 
+}
+.roedcirkel4{
+  position:absolute;
+  width: 36rem;
+  margin-top: 6rem;
+  border-color: var(--Moerkpink);
+  border-radius: 15rem; 
+}
+.roedcirkel5{
+  position:absolute;
+  width: 38rem;
+  margin-top: 5rem;
+  border-color: var(--Moerkpink);
+  border-radius: 15rem; 
+}
+.roedcirkel6{
+  position:absolute;
+  width: 40rem;
+  margin-top: 4rem;
+  border-color: var(--Moerkpink);
+  border-radius: 100rem; 
+}
+.roedcirkel7{
+  position:absolute;
+  width: 42rem;
+  margin-top: 3rem;
+  border-color: var(--Moerkpink);
+  border-radius: 25rem; 
+}
+.roedcirkel8{
+  position:absolute;
+  width: 44rem;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color:var(--Moerkpink);
+  border-radius: 25rem; 
+}
+.roedcirkel9{
+  position:absolute;
+  width: 46rem;
+  margin-top: 1rem;
+  border-style: solid;
+  border-color: var(--Moerkpink);
+  border-radius: 25rem; 
+}
+
+.roedcirkel10{
+  position:absolute;
+  width: 48rem;
+  border-style: solid;
+  border-color:var(--Moerkpink);
+  border-radius: 150rem; 
+}
+
+.roedcirkel11{
+  position:absolute;
+  width: 50rem;
+  margin-top: -1rem;
+  border-style: solid;
+  border-color:var(--Moerkpink);
+  border-radius: 150rem; 
+}
+.roedcirkel12{
+  position:absolute;
+  width: 52rem;
+  margin-top:-2rem;
+  border-style: solid;
+  border-color: var(--Moerkpink);
+  border-radius: 150rem; 
+}
+.roedcirkel13{
+  position:absolute;
+  width: 54rem;
+  margin-top:-3rem;
+  border-style: solid;
+  border-color:var(--Moerkpink);
+  border-radius: 150rem; 
+}
+
+
+.infographic3{
+  position: relative;
+  display: flex;
+   margin-top:30rem;
+}
+
+.infographic3 img:hover{
+    border-style: solid;
+    border-radius: 150rem;
+    border-width: 0.2rem;
+    transition: .3s;
+  }
+
+.cirkel3 {
+    position:absolute;
+    width: 12rem;
+    border-style: solid;
+    border-color: var(--lilla);
+    border-radius: 12rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+  }
+
+  .cirkel3:hover{
+    animation:scale3 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes scale3 {
+    0%{left: 0rem;;}
+    100%{left: 3rem;scale: 1.3}
+  }
+
+
+  .lillacirkel1{
+    position:absolute;
+    width: 10rem;
+    margin-top: 9rem;
+    border-color: var(--lilla);
+    border-radius: 15rem; 
+  }
+
+  .lillacirkel2{
+    position:absolute;
+    width: 12rem;
+    margin-top: 9rem;
+    border-color: var(--lilla);
+    border-radius: 15rem; 
+  }
+  
+  .lillacirkel3{
+    position:absolute;
+    width: 14rem;
+    margin-top: 7rem;
+    border-color: var(--lilla);
+    border-radius: 15rem; 
+  }
+  .lillacirkel4{
+    position:absolute;
+    width: 16rem;
+    margin-top: 6rem;
+    border-color: var(--lilla);
+    border-radius: 15rem; 
+  }
+  .lillacirkel5{
+    position:absolute;
+    width: 18rem;
+    margin-top: 5rem;
+    border-color: var(--lilla);
+    border-radius: 15rem; 
+  }
+  .lillacirkel6{
+    position:absolute;
+    width: 20rem;
+    margin-top: 4rem;
+    border-color: var(--lilla);
+    border-radius: 100rem; 
+  }
+  .lillacirkel7{
+    position:absolute;
+    width: 22rem;
+    margin-top: 3rem;
+    border-color: var(--lilla);
+    border-radius: 25rem; 
+  }
+  .lillacirkel8{
+    position:absolute;
+    width: 24rem;
+    margin-top: 2rem;
+    border-style: solid;
+    border-color:var(--lilla);
+    border-radius: 25rem; 
+  }
+  .lillacirkel9{
+    position:absolute;
+    width: 26rem;
+    margin-top: 1rem;
+    border-style: solid;
+    border-color: var(--lilla);
+    border-radius: 25rem; 
+  }
+  
+  .lillacirkel10{
+    position:absolute;
+    width: 28rem;
+    border-style: solid;
+    border-color:var(--lilla);
+    border-radius: 150rem; 
+  }
+  
+  .lillacirkel11{
+    position:absolute;
+    width: 30rem;
+    margin-top: -1rem;
+    border-style: solid;
+    border-color:var(--lilla);
+    border-radius: 150rem; 
+  }
+  .lillacirkel12{
+    position:absolute;
+    width: 32rem;
+    margin-top:-2rem;
+    border-style: solid;
+    border-color: var(--lilla);
+    border-radius: 150rem; 
+  }
+  .lillacirkel13{
+    position:absolute;
+    width: 34rem;
+    margin-top:-3rem;
+    border-style: solid;
+    border-color:var(--lilla);
+    border-radius: 150rem; 
+  }
+
+
+  .infographic3{
+    position: relative;
+    display: flex;
+     margin-right: 20rem;
+     margin-top:50rem;
+  }
+
+  .infographic3 img:hover{
+      border-style: solid;
+      border-radius: 150rem;
+      border-width: 0.4rem;
+      transition: .3s;
+    }
+
+  .cirkel3 {
+      position:absolute;
+      width: 31rem;
+      margin-top: 9.1rem;
+      border-style: solid;
+      border-color: transparent;
+      border-radius: 30rem;
+      margin-left: 1rem;
+    }
+
+
+.lillacirkel3{
+  position:absolute;
+  width: 34rem;
+  margin-top: 7rem;
+  border-color: var(--lilla);
+  border-width: 3rem;
+  border-radius: 15rem; 
+}
+.lillacirkel4{
+  position:absolute;
+  width: 36rem;
+  margin-top: 6rem;
+  border-color: var(--lilla);
+  border-radius: 15rem; 
+}
+.lillacirkel5{
+  position:absolute;
+  width: 38rem;
+  margin-top: 5rem;
+  border-color: var(--lilla);
+  border-radius: 15rem; 
+}
+.lillacirkel6{
+  position:absolute;
+  width: 40rem;
+  margin-top: 4rem;
+  border-color: var(--lilla);
+  border-radius: 100rem; 
+}
+.lillacirkel7{
+  position:absolute;
+  width: 42rem;
+  margin-top: 3rem;
+  border-color: var(--lilla);
+  border-radius: 25rem; 
+}
+.lillacirkel8{
+  position:absolute;
+  width: 44rem;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color:var(--lilla);
+  border-radius: 25rem; 
+}
+.lillacirkel9{
+  position:absolute;
+  width: 46rem;
+  margin-top: 1rem;
+  border-style: solid;
+  border-color: var(--lilla);
+  border-radius: 25rem; 
+}
+
+.lillacirkel10{
+  position:absolute;
+  width: 48rem;
+  border-style: solid;
+  border-color:var(--lilla);
+  border-radius: 150rem; 
+}
+
+.lillacirkel11{
+  position:absolute;
+  width: 50rem;
+  margin-top: -1rem;
+  border-style: solid;
+  border-color:var(--lilla);
+  border-radius: 150rem; 
+}
+.lillacirkel12{
+  position:absolute;
+  width: 52rem;
+  margin-top:-2rem;
+  border-style: solid;
+  border-color: var(--lilla);
+  border-radius: 150rem; 
+}
+.lillacirkel13{
+  position:absolute;
+  width: 54rem;
+  margin-top:-3rem;
+  border-style: solid;
+  border-color:var(--lilla);
+  border-radius: 150rem; 
+}
+
+
+/* Flex og placering af footer */
+.footer {
+    display: flex;
+    align-items: start; /* Justerer elementerne til at starte foroven */
+    font-family: "Poppins", sans-serif;
+    background-color: var(--moerkbrun);
+    color: var(--white);
+    margin-top: 60rem;
+  }
+  
+  /* Flex styling til hver footer-sektion */
+  .footer-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column; /* Laver en lodret stak af h2 og p */
+    align-items: start; /* Justerer elementerne til venstre */
+    padding: 4rem;
+  }
+  
+  .footer-section h3 {
+    margin: 0;
+    font-size:1rem;
+  }
+  
+  .footer-section p{
+    font-size: 0.6rem;
+  }
+  
+  .ikoner{
+    margin-top: 0.2rem;
+    width: 6rem;
+  }
+
+  
+/* Media for mobiltelefoner */
+@media only screen and (min-width: 440px) and (max-width: 767px) {
+
+  /* Skrifttyper, størrelse, udseende og placering, ændres da skalaen er mindre på telefon */
+  
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    }
+    
+    /* Logo */
+    .logo img {
+      width: 28rem;
+    }
+  
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem; /* mellemrum mellem nav tasterne*/
+      margin-top: -3rem;
+      margin-right: 1.8rem;
+      margin-left: 8rem;
+    }
+  
+    .main-nav ul li a {
+      text-decoration: none;
+      color: var(--moerkbrun);
+      font-family: "Poppins", serif;
+      font-size: 0.9rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    .overskrift{
+      display: none;
+    }
+
+    .cirkel1 {
+      width: 24rem;
+      margin-top: 12rem;
+    }
+
+    .infographic1{
+      position: relative;
+      padding-top: 3rem;
+     width:32rem;
+     height: 55rem;
+     overflow: hidden;
+     margin-top: 3rem;
+     margin-bottom: -50rem;
+    }
+
+    .infographic2{
+      position: relative;
+     padding-top: 3rem;
+    width:32rem;
+    height: 55rem;
+    overflow: hidden;
+    margin-top: 0rem;
+    }
+
+    .infographic3{
+      position: relative;
+     padding-top: 3rem;
+    width:32rem;
+    height: 55rem;
+    overflow: hidden;
+    margin-top: 0rem;
+    margin-bottom: -50rem;
+    }
+    
+    .infographic2{
+      margin-top: 50rem;
+    }
+
+    .cirkel2 {
+      width: 24.5rem;
+      margin-top: 12rem;
+    }
+
+    .cirkel3 {
+      width: 25rem;
+      margin-top: 12rem;
+    }
+    
+  .footer{
+    flex-direction: column;
+    margin-top: 55rem;
+}
+
+
+/* Flex styling til hver footer-sektion */
+.footer-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column; /* Laver en lodret stak af h2 og p */
+  align-items: start; /* Justerer elementerne til venstre */
+  padding: 4rem;
+}
+
+.footer-section h3 {
+  margin: 0;
+  font-size:1.5rem;
+}
+
+.footer-section p{
+  font-size: 1rem;
+}
+
+.ikoner{
+  margin-top: 1rem;
+  width: 14rem;
+}
+  }
